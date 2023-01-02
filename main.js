@@ -44,8 +44,37 @@ myPenguin.canFly = true;
 // myPenguin.fly()
 
 // 13)
-for (let key in myPenguin){
-    console.log(`${key} : ${myPenguin[key]} `);
+// for (let key in myPenguin){
+//     console.log(`${key} : ${myPenguin[key]} `);
+// }
+
+ // ####### EX4 #######
+
+ // 1)
+
+ myPenguin.favoriteFoods = ["food 1", "food 2", "food 3"]
+
+ // 2)
+//  console.log(myPenguin.favoriteFoods[1]);
+
+// 3)
+
+let firstFavFoods = myPenguin.favoriteFoods[0]
+
+// 4)
+myPenguin.favoriteFoods.push("food 4");
+
+// 5)
+// console.log(myPenguin.favoriteFoods.length);
+
+// 6)
+myPenguin.favoriteFoods.splice(myPenguin.favoriteFoods.length - 1, 1, "pineapples")
+// console.log(myPenguin.favoriteFoods);
+
+// 7)
+let lastFavFood = myPenguin.favoriteFoods[myPenguin.favoriteFoods.length -1];
+
+// 8)
+for (const food in myPenguin.favoriteFoods){
+    console.log(myPenguin.favoriteFoods[food]);
 }
-
-
