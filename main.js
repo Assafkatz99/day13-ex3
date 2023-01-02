@@ -75,6 +75,86 @@ myPenguin.favoriteFoods.splice(myPenguin.favoriteFoods.length - 1, 1, "pineapple
 let lastFavFood = myPenguin.favoriteFoods[myPenguin.favoriteFoods.length -1];
 
 // 8)
-for (const food in myPenguin.favoriteFoods){
-    console.log(myPenguin.favoriteFoods[food]);
+// for (const food in myPenguin.favoriteFoods){
+//     console.log(myPenguin.favoriteFoods[food]);
+// }
+
+
+// ############ EX5 ###############
+
+const gunter = {
+    name: "Gunter",
+    origin: "Adventure Time",
+    canFly: false,
+    sayHello: function () {
+      console.log("QUACK!!!");
+    },
+  };
+  
+  const ramon = {
+    name: "Ramón",
+    origin: "Happy Feet",
+    canFly: true,
+    sayHello: function () {
+      console.log("Estoy encantado de conocerle.");
+    },
+  };
+  
+  const fred = {
+    name: "Fred",
+    origin: "Sitting Ducks",
+    canFly: false,
+    sayHello: function () {
+      console.log("Hi there!");
+    },
+  };
+
+  
+  // 1) 
+
+  let penguins = [gunter,ramon,fred];
+
+  // 2)
+//   console.log(penguins[0]);
+
+// 3)
+//   let secondPenguin = penguins[1];
+
+// 4)
+// console.log(penguins[penguins.length - 1].name);
+
+// 5)
+penguins.push(myPenguin);
+
+// 6)
+// console.log(penguins.length);
+
+// 7)
+penguins[0].canFly = true
+
+// 8)
+penguins[0].sayHello()
+
+// 9)
+
+// for (let p in penguins){
+//     console.log(penguins[p].name);
+// }
+
+
+// 10)
+// for (let p in penguins){
+//     penguins[p].sayHello()
+// }
+
+// 11)
+for (let p in penguins){
+    penguins[p].numberOfFeet = 2
 }
+
+// 12)
+for (let p in penguins){
+    if (penguins[p].canFly){
+        console.log(`${penguins[p].name} can fly!`);
+    }
+    }
